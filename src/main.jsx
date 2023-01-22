@@ -1,5 +1,5 @@
 import App from './components/App';
-import './main.scss';
+import './styles/main.scss';
 
 /**
  * New wat to build Render in React 18
