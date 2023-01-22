@@ -1,0 +1,22 @@
+{
+  "name": "react-pinterest",
+  "version": "1.0.0",
+  "description": "Portfolio for my new projects.",
+  "main": "main.js",
+  "author": "Daniel F <dfproffesional@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite --mode development",
+    "prev": "vite preview --mode development",
+    "build": "vite build --mode production"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^3.0.1",
+    "sass": "^1.57.1",
+    "vite": "^4.0.4"
+  }
+}
