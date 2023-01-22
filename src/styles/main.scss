@@ -1,4 +1,4 @@
-@import url('./reset.scss');
+@import './reset', './_variables';
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -17,18 +17,22 @@ time, mark, audio, video
   box-sizing: border-box;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
+body{ background-color: $color-primary; }
 #app{
+  color: whitesmoke;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#app > h1{
-  font-weight: 700;
-  font-size: 2em;
-}
-#app img{
-  width: 100px;
-  margin-right: 16px;
+  & > h1{
+    font-weight: 700;
+    font-size: 2em;
+    & > span{
+      color: $color-acent;
+    }
+  }
+  & > img{
+    width: 100px;
+    margin-right: 16px;
+  }
 }
