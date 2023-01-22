@@ -9,7 +9,6 @@ export default defineConfig({
   esbuild:{
     jsxInject: `
       import React from 'react';
-      import { createRoot } from 'react-dom/client';
     `
   }
 })

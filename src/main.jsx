@@ -1,5 +1,9 @@
-import App from './components/App';
+import {
+  RouterProvider
+} from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
 import './styles/main.scss';
+import router from './router';
 
 /**
  * New wat to build Render in React 18
@@ -7,6 +11,6 @@ import './styles/main.scss';
  */
 createRoot(document.querySelector('#app')).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 );
